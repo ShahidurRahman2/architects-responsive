@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-normal{
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+header{
+  background-color: #FFF4E6 ;
+  max-width: 1700px;
+
+}
+.display-flex{
+  display: flex;
+}
+.dark1{
+  color: #131313;
+}
+.dark3{
+ color: #727272;
+}
+.btn-primary{
+  background-color: #FF900E;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  border:none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.navbar ,.banner-container{
+  max-width: 1440px;
+  margin: 0 auto;  
+  
+}
+.banner-heading{
+          font-weight: 800;
+}
+.banner-container{
+  padding-bottom: 50px;
+}
+.navbar{
+  justify-content: space-around;
+  align-items: center;
+}
+.menu{
+  gap: 30px;
+  list-style: none;
+  
+}
+li a{
+  text-decoration: none;
+}
+.banner-text-container{
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.banner-img{
+  width: 100%;
+  
+}
+/* -----------mobile responsive-------- */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+  .menu {
+      flex-direction: column;
+      gap: 10px; /* Adjust spacing between menu items */
+      text-align: center; /* Center align menu items */
+  }
+  .banner-container {
+      padding: 20px; /* Add padding around banner content */
+  }
+  .banner-text-container {
+      width: 100%; /* Occupy full width on smaller screens */
+      text-align: center;
+      margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  .banner-img {
+      max-width: 100%; /* Ensure banner image scales to fit smaller screens */
+  }
+  .banner-img img{
+   width: 100%;
+  }
+  .btn-primary {
+      width: 100%; /* Make button full width */
+      margin-top: 15px; /* Adjust spacing */
+  }
+}
